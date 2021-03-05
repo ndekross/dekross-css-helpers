@@ -8,6 +8,14 @@ export function withHover(props) {
   }
 }
 
+export function rem() {
+  let result = ""
+  for (let argument of arguments) {
+    result += `${argument.toString()}rem `
+  }
+  return result.trim()
+}
+
 export function em() {
   let result = ""
   for (let argument of arguments) {
